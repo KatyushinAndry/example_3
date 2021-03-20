@@ -19,9 +19,9 @@ public class SelenidTests {
         $(".HeaderMenu-summary").shouldHave(text("Why GitHub?"));
         //----
         $("[data-content='Wiki']").click();
-        $(".markdown-body").$(new ByText("Soft assertions")).should(visible,exist).click();
+        $(".markdown-body").$(byText("Soft assertions")).should(visible).click();
         //----assert
-        $(".markdown-body").shouldHave(text("JUnit4")).should(visible,exist);
+        $(".markdown-body").shouldHave(text("JUnit5")).should(visible);
     }
 
     @Test
